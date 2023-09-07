@@ -1,11 +1,6 @@
 import "./App.css";
 import { Button, Form, Input, Modal, Avatar, Card, message } from "antd";
-import {
-  SearchOutlined,
-  EditOutlined,
-  EllipsisOutlined,
-  ArrowRightOutlined,
-} from "@ant-design/icons";
+import { SearchOutlined } from "@ant-design/icons";
 import {
   UilTornado,
   UilSun,
@@ -75,12 +70,11 @@ function App() {
         ]}
       >
         <Card
-          style={{ padding: "10px" }}
           cover={
             <img
+              src="https://firebasestorage.googleapis.com/v0/b/upload-4b319.appspot.com/o/sathishbabudeveloper%40gmail.com%2FWeather%20Image.jpg?alt=media&token=0ae7e0e9-a277-4a77-acbb-b41eaef34b71"
               style={{ height: "250px" }}
               alt="Weather icture"
-              src="https://img.freepik.com/free-vector/girl-news-weather-forecast_1308-20992.jpg?w=740&t=st=1694088376~exp=1694088976~hmac=5d58722e8b483b43618024dad661f2b292ce9da2863bcbcdf0272e1d76b6929c"
             />
           }
           actions={[
