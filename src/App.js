@@ -28,7 +28,7 @@ function App() {
     try {
       const response = await axios.request(options);
       setWeatherInfo(response.data);
-      console.log(weatherInfo);
+      // console.log(weatherInfo);
       setModal(true);
     } catch (error) {
       message.error(error.response.data.error.message);
@@ -132,7 +132,7 @@ function App() {
             }
             title={
               weatherInfo.current !== undefined
-                ? weatherInfo.location.name
+                ? ` ${weatherInfo.location.name} - ${weatherInfo.location.region} -  ${weatherInfo.location.country} `
                 : null
             }
             description={
